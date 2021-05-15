@@ -1,0 +1,4 @@
+/home/boro/Dokumenty/CodeForces/codeforcesCpp/src/build/CMakeFiles/rebuild_cache.dir
+/home/boro/Dokumenty/CodeForces/codeforcesCpp/src/build/CMakeFiles/edit_cache.dir
+/home/boro/Dokumenty/CodeForces/codeforcesCpp/src/build/CMakeFiles/run_template.dir
+/home/boro/Dokumenty/CodeForces/codeforcesCpp/src/build/CMakeFiles/codeforcesCPP.dir
