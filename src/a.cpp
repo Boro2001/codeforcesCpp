@@ -1,6 +1,6 @@
 #include <iostream>
 
 int main(){
-	std::cout<<"siema polskie smiecie";
+	std::cout<<"siema ";
 	return 0;
 }
