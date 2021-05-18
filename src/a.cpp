@@ -1,55 +1,41 @@
 #include <iostream>
 
 using namespace std;
-class Node
-{
-private:
-	int wysoksc;
-public:
-	double wartosc;
-	static int ilosc;
-	Node * left, * right, * parent;
-	Node(/* args */);
-	~Node();
+
+// kontenery - 9. wykład - wektor lista kolejka stos zbior i wielozbior słownik map 
+
+class Vector{
+	protected:
+	double * start, * end;
+	int capacity;
+	bool reserve(int newCapacity);
+
+	public:
+	Vector(int size = 0);
+	~Vector();
+	int getSize() const;
+	bool pushFront(double v);
+	bool pushBack(double v);
+	bool instertAt(int where, double v);
+	bool deleteFront();
+	bool deleteBack();
+	double & elementAt(int i)const;
+	void dump()const;
 };
-int Node::ilosc = 0;
-
-Node::Node(/* args */)
-{
-	cout<<"new node added \n";
-}
-
-Node::~Node()
-{
-}
-void wstaw(double w, Node ** root){
-	Node * nowy = new Node;
-	Node * porzednik, * ws;
-	nowy->ilosc+=1;
-	nowy->wartosc= w;
-	nowy->left=nullptr; nowy->right=nullptr;
-	ws = *root;
-	while (ws)
-	{
-		porzednik = ws;
-		if(w>=ws->wartosc) ws = ws->right;
-		else ws = ws->left;
+Vector::Vector(int size):start(0),end(0),capacity(0){
+	if(size>0){
+	start = new double[size];
+	capacity=size;
+	end=start;
 	}
-	nowy->parent = porzednik;
 }
-void wypisz(Node * root)
-{
-	if(root==nullptr)return;
-	wypisz (root->left);
-	cout<<root->wartosc;
-	wypisz(root->right);
-};
-
-
-int main(){
-	Node  * root = nullptr;
-	wstaw(5, &root);wstaw(2, &root);wstaw(6, &root);wstaw(7, &root);wstaw(8, &root);wstaw(3, &root);wstaw(9, &root);
-	wypisz(root);
-	cout<<root->ilosc;
- 	return 0;
+Vector::~Vector(){
+ if (start!=0)delete []start;
+ start=end=0;
+ capacity=0;
 }
+int Vector::getSize()const{
+ return end-start;
+}
+
+int n
