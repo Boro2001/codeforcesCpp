@@ -57,27 +57,27 @@ include CMakeFiles/codeforcesCPP.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/codeforcesCPP.dir/flags.make
 
-CMakeFiles/codeforcesCPP.dir/a.o: CMakeFiles/codeforcesCPP.dir/flags.make
-CMakeFiles/codeforcesCPP.dir/a.o: ../a.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/boro/Dokumenty/CodeForces/codeforcesCpp/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/codeforcesCPP.dir/a.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/codeforcesCPP.dir/a.o -c /home/boro/Dokumenty/CodeForces/codeforcesCpp/src/a.cpp
+CMakeFiles/codeforcesCPP.dir/main.o: CMakeFiles/codeforcesCPP.dir/flags.make
+CMakeFiles/codeforcesCPP.dir/main.o: ../main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/boro/Dokumenty/CodeForces/codeforcesCpp/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/codeforcesCPP.dir/main.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/codeforcesCPP.dir/main.o -c /home/boro/Dokumenty/CodeForces/codeforcesCpp/src/main.cpp
 
-CMakeFiles/codeforcesCPP.dir/a.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/codeforcesCPP.dir/a.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/boro/Dokumenty/CodeForces/codeforcesCpp/src/a.cpp > CMakeFiles/codeforcesCPP.dir/a.i
+CMakeFiles/codeforcesCPP.dir/main.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/codeforcesCPP.dir/main.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/boro/Dokumenty/CodeForces/codeforcesCpp/src/main.cpp > CMakeFiles/codeforcesCPP.dir/main.i
 
-CMakeFiles/codeforcesCPP.dir/a.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/codeforcesCPP.dir/a.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/boro/Dokumenty/CodeForces/codeforcesCpp/src/a.cpp -o CMakeFiles/codeforcesCPP.dir/a.s
+CMakeFiles/codeforcesCPP.dir/main.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/codeforcesCPP.dir/main.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/boro/Dokumenty/CodeForces/codeforcesCpp/src/main.cpp -o CMakeFiles/codeforcesCPP.dir/main.s
 
 # Object files for target codeforcesCPP
 codeforcesCPP_OBJECTS = \
-"CMakeFiles/codeforcesCPP.dir/a.o"
+"CMakeFiles/codeforcesCPP.dir/main.o"
 
 # External object files for target codeforcesCPP
 codeforcesCPP_EXTERNAL_OBJECTS =
 
-codeforcesCPP: CMakeFiles/codeforcesCPP.dir/a.o
+codeforcesCPP: CMakeFiles/codeforcesCPP.dir/main.o
 codeforcesCPP: CMakeFiles/codeforcesCPP.dir/build.make
 codeforcesCPP: CMakeFiles/codeforcesCPP.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/boro/Dokumenty/CodeForces/codeforcesCpp/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable codeforcesCPP"

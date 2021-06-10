@@ -63,37 +63,37 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/run_template.dir/clean
+clean: CMakeFiles/run_cpp.dir/clean
 clean: CMakeFiles/codeforcesCPP.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/run_template.dir
+# Target rules for target CMakeFiles/run_cpp.dir
 
 # All Build rule for target.
-CMakeFiles/run_template.dir/all: CMakeFiles/codeforcesCPP.dir/all
-	$(MAKE) -f CMakeFiles/run_template.dir/build.make CMakeFiles/run_template.dir/depend
-	$(MAKE) -f CMakeFiles/run_template.dir/build.make CMakeFiles/run_template.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/boro/Dokumenty/CodeForces/codeforcesCpp/src/build/CMakeFiles --progress-num= "Built target run_template"
-.PHONY : CMakeFiles/run_template.dir/all
+CMakeFiles/run_cpp.dir/all: CMakeFiles/codeforcesCPP.dir/all
+	$(MAKE) -f CMakeFiles/run_cpp.dir/build.make CMakeFiles/run_cpp.dir/depend
+	$(MAKE) -f CMakeFiles/run_cpp.dir/build.make CMakeFiles/run_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/boro/Dokumenty/CodeForces/codeforcesCpp/src/build/CMakeFiles --progress-num= "Built target run_cpp"
+.PHONY : CMakeFiles/run_cpp.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/run_template.dir/rule: cmake_check_build_system
+CMakeFiles/run_cpp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/boro/Dokumenty/CodeForces/codeforcesCpp/src/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/run_template.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/run_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/boro/Dokumenty/CodeForces/codeforcesCpp/src/build/CMakeFiles 0
-.PHONY : CMakeFiles/run_template.dir/rule
+.PHONY : CMakeFiles/run_cpp.dir/rule
 
 # Convenience name for target.
-run_template: CMakeFiles/run_template.dir/rule
+run_cpp: CMakeFiles/run_cpp.dir/rule
 
-.PHONY : run_template
+.PHONY : run_cpp
 
 # clean rule for target.
-CMakeFiles/run_template.dir/clean:
-	$(MAKE) -f CMakeFiles/run_template.dir/build.make CMakeFiles/run_template.dir/clean
-.PHONY : CMakeFiles/run_template.dir/clean
+CMakeFiles/run_cpp.dir/clean:
+	$(MAKE) -f CMakeFiles/run_cpp.dir/build.make CMakeFiles/run_cpp.dir/clean
+.PHONY : CMakeFiles/run_cpp.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/codeforcesCPP.dir

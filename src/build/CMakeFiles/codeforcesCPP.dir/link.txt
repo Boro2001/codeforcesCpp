@@ -1,1 +1,1 @@
-/usr/bin/c++    -rdynamic CMakeFiles/codeforcesCPP.dir/a.o  -o codeforcesCPP 
+/usr/bin/c++    -rdynamic CMakeFiles/codeforcesCPP.dir/main.o  -o codeforcesCPP 

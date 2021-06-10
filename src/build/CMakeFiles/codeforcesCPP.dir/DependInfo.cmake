@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/boro/Dokumenty/CodeForces/codeforcesCpp/src/a.cpp" "/home/boro/Dokumenty/CodeForces/codeforcesCpp/src/build/CMakeFiles/codeforcesCPP.dir/a.o"
+  "/home/boro/Dokumenty/CodeForces/codeforcesCpp/src/main.cpp" "/home/boro/Dokumenty/CodeForces/codeforcesCpp/src/build/CMakeFiles/codeforcesCPP.dir/main.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

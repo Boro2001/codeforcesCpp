@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named run_template
+# Target rules for targets named run_cpp
 
 # Build rule for target.
-run_template: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 run_template
-.PHONY : run_template
+run_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 run_cpp
+.PHONY : run_cpp
 
 # fast build rule for target.
-run_template/fast:
-	$(MAKE) -f CMakeFiles/run_template.dir/build.make CMakeFiles/run_template.dir/build
-.PHONY : run_template/fast
+run_cpp/fast:
+	$(MAKE) -f CMakeFiles/run_cpp.dir/build.make CMakeFiles/run_cpp.dir/build
+.PHONY : run_cpp/fast
 
 #=============================================================================
 # Target rules for targets named codeforcesCPP
@@ -137,19 +137,19 @@ codeforcesCPP/fast:
 .PHONY : codeforcesCPP/fast
 
 # target to build an object file
-a.o:
-	$(MAKE) -f CMakeFiles/codeforcesCPP.dir/build.make CMakeFiles/codeforcesCPP.dir/a.o
-.PHONY : a.o
+main.o:
+	$(MAKE) -f CMakeFiles/codeforcesCPP.dir/build.make CMakeFiles/codeforcesCPP.dir/main.o
+.PHONY : main.o
 
 # target to preprocess a source file
-a.i:
-	$(MAKE) -f CMakeFiles/codeforcesCPP.dir/build.make CMakeFiles/codeforcesCPP.dir/a.i
-.PHONY : a.i
+main.i:
+	$(MAKE) -f CMakeFiles/codeforcesCPP.dir/build.make CMakeFiles/codeforcesCPP.dir/main.i
+.PHONY : main.i
 
 # target to generate assembly for a file
-a.s:
-	$(MAKE) -f CMakeFiles/codeforcesCPP.dir/build.make CMakeFiles/codeforcesCPP.dir/a.s
-.PHONY : a.s
+main.s:
+	$(MAKE) -f CMakeFiles/codeforcesCPP.dir/build.make CMakeFiles/codeforcesCPP.dir/main.s
+.PHONY : main.s
 
 # Help Target
 help:
@@ -159,11 +159,11 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... run_template"
+	@echo "... run_cpp"
 	@echo "... codeforcesCPP"
-	@echo "... a.o"
-	@echo "... a.i"
-	@echo "... a.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 

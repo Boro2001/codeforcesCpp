@@ -116,6 +116,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/run_template.dir/DependInfo.cmake"
+  "CMakeFiles/run_cpp.dir/DependInfo.cmake"
   "CMakeFiles/codeforcesCPP.dir/DependInfo.cmake"
   )
