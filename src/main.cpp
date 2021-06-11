@@ -103,7 +103,65 @@ void Vector::dump() const {
 }
 
 
+//lista
+class ListElement{
+public:
+      ListElement * next; 
+      int value;
+};
+class List{
+public:
+      ListElement * start; 
+      ListElement * end;
+
+      List();
+      ~List();
+      void pushFront(int);
+      void pushBack(int);
+      void insertAt(int, int);
+      void deleteFront();
+      void deleteBack();
+      void dump() const;
+};
+List::List():start(nullptr), end(nullptr){}
+
+void List::pushFront(int v){
+      ListElement * le = new ListElement();
+      le->value = v; 
+      le->next = start;
+      start = le;
+      if(end==nullptr)end=start;
+}     
+void List::pushBack(int v){
+      ListElement * le = new ListElement();
+      le->value = v;
+      le->next = nullptr;
+      if(end) end->next = le;
+      end = le;
+      if(start==nullptr) start = end;
+}
+void List::insertAt(int where, int v){
+      ListElement * le = new ListElement;ListElement * prev = le;
+      le->value = v;
+      le->next = start;
+      for(int i = 0; i<where; ++i){
+            prev = le->next;
+            le->next = le->next->next;
+      }
+      prev->next = le;
+}
+void List::dump(){
+      cout<<"[ ";
+      for(ListElement * i = start; i!=0; i=i->next)
+            cout<<i->value<<" ";
+      cout << " ]\n";
+}
+void List::deleteBack(){
+      ListElement * newEnd=0;
+      for(int i )
+}
 int main(){
+      /*
     Vector vect;
     for(int i=0;i<5;i++){
         vect.pushFront(i);
@@ -120,5 +178,9 @@ int main(){
     }
     vect.elementAt(0)=-1;
     vect.dump();
+    */
+   //kontenery 2
+   //wielokrotne przedłużanie wektora o kilkadziesiąt el. jest nieefektywne
+
       return 0;
 }
